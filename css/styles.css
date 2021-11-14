@@ -50,6 +50,7 @@ h2 {
     font-weight: 500;
     color: var(--clr-neutral-1);
     line-height: 1.5em;
+    padding-top: .5em;
 }
 
 .rating-block {
@@ -165,20 +166,23 @@ h2 {
 
     h1 {
         font-size: 3em;
-        margin-left: 0;
+        margin: 1.5em 0 0 0;
     }
 
     .rating-block {
         grid-area: rb;        
         
         display: grid;
-        grid-template-rows: 2fr 1fr 1fr 1fr;
-        grid-template-columns: 1.5em 1.5em auto 1.5em 1.5em;
-        grid-template-areas:
-        '.. .. .. .. ..' 
+        grid-template-rows: 1fr 1fr 1fr;
+        row-gap: 1em;
+        grid-template-columns: .75fr .75fr 5fr .75fr .75fr;
+        grid-template-areas: 
         's1 s1 s1 .. ..'
         '.. s2 s2 s2 ..'
         '.. .. s3 s3 s3';
+
+        margin-top: auto;
+        margin-bottom: auto;
     }
 
     .rating-card1 {
